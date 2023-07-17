@@ -1,0 +1,230 @@
+body {
+    width: 1500px;
+    height: auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo-image {
+    padding: 30px;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-item {
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.first-view {
+    position: relative;
+}
+.first-view__image {
+    display: inline-block;
+    margin-left: 550px;
+    width: 50%;
+}
+
+h1 {
+    position: absolute;
+    top: 80px;
+    left: 230px;
+    width: 800px;
+    font-size: 75px;
+    font-family: 'Indie Flower', cursive;
+    color: #AE1862;
+    line-height: 100px;
+}
+h1 span {
+    color: #0B9FB0;
+}
+h2 {
+    font-size: 25px;
+    color: #AE1862;
+    margin-top: 30px;
+}
+h2 span {
+    color: #0B9FB0;
+}
+.first-view__text {
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+
+.news__logo {
+    padding-left: 200px;
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    color: #AE1862;
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+}
+.news__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+.news__list-item {
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+}
+.news__list-item span {
+    padding: 5px 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #AE1862;
+    color: white;
+    border-radius: 30px;
+}
+
+.about__content {
+    background-color: #F5F5F5;
+}
+.about__logo {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    color: #AE1862;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+.about__title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.about__text-item {
+    display: inline-block;
+    width: 30%;
+    line-height: 30px;
+    margin-left: 250px;
+    padding: 10px;
+}
+.about__image {
+    display: inline-block;
+    text-align: right;
+    margin-top: -110px;
+    margin-left: -220px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.service__logo {
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    color: #AE1862;
+    margin-bottom: 10px;
+}
+.service__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+.blog {
+    background-color: #F5F5F5;
+}
+.blog__logo {
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    color: #AE1862;
+    margin-bottom: 10px;
+}
+.blog__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.blog__card-image-tag {
+    width: 40px;
+    background-color: #AE1862;
+    color: white;
+    padding: 7px;
+    border-radius: 15px 0 0 0;
+}
+
+.company {
+    width: 60%;
+}
+.company__logo {
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+    color: #AE1862;
+    margin-bottom: 10px;
+}
+.company__title {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 25px;
+}
+table {
+    margin: 30px 50px 70px 50px;
+}
+th {
+    width: 200px;
+    text-align: left;
+    background-color: #F5F5F5;
+}
+td {
+    width: 400px;
+}
+.company__image-left {
+    position: relative;
+}
+.company__text-left {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.company__image-right {
+    position: relative;
+}
+.company__text-right {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.contact__item {
+    text-align: center;
+}
+.contact__button {
+    position: relative;
+    background: linear-gradient(90deg,#FD208E,#B41664);
+    width: 200px;
+    display: block;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    margin: 100px auto;
+    box-shadow: 0px 7px 0px #840151;
+}
+.contact__button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    background: url(img/mail-icon.png) no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    transform: translate(0,-50%);
+}
