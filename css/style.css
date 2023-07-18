@@ -146,46 +146,54 @@ h2 span {
     color: #6F6F6F;
     padding-left: 280px;
 }
+
 .service__item {
-    display: flex;
-    margin-bottom: 60px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    margin: 0 0 60px 280px;
 }
-.service__item p {
-    color :white;
-    margin: 10px;
-}
-.item__image {
+.item-box1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding: 40px;
+    color: white;
     text-align: center;
+    line-height: 25px;
+    background-color: #B31767;
+}
+.item-box2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: white;
+    line-height: 25px;
+    padding: 25px;
+    background-color: #B35B8B;
+}
+.item-box3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: white;
+    line-height: 25px;
+    padding: 25px;
+    background-color: #B2889B;
+}
+.item__image img {
+    padding-top: 10px;
+}
+.item__title1 {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 15px;
 }
 .item__title {
     font-weight: bold;
     font-size: 17px;
-    text-align: center;
-}
-.item__text {
-    line-height: 25px;
-}
-
-.item-box1 {
-    display: flex;
-    flex-direction: column;
-    background-color: #B31767;
-    width: 450px;
-    padding: 50px;
-    margin-left: 300px;
-}
-.item-box2 {
-    display: flex;
-    background-color: #B35B8B;
-    width: 450px;
-}
-.item-box3 {
-    display: flex;
-    background-color: #B2889B;
-    width: 450px;
+    margin-bottom: 15px;
 }
 .item-right {
-    padding: 15px;
+    margin: -110px 0px 0px 150px;
 }
 
 .blog {
@@ -333,10 +341,19 @@ td {
     text-align: center;
 }
 .contact__text {
+    position: relative;
     padding-top: 50px;
     font-size: 20px;
     font-weight: bold;
     color: #6F6F6F;
+}
+.contact__text::after {
+    position: absolute;
+    content: "";
+    top: 100px;
+    width: 2px;
+    height: 40px;
+    background-color: #AE1862;
 }
 .contact__button {
     position: relative;
@@ -355,14 +372,17 @@ td {
     content: "";
     position: absolute;
     top: 50%;
-    left: 15px;
-    background: url() no-repeat;
+    left: 25px;
+    background: url(../メールアイコン（白線のみ）.png) no-repeat;
     background-size: cover;
     width: 30px;
     height: 30px;
     transform: translate(0,-50%);
 }
-
 .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #6F6F6F;
     background-color: #F5F5F5;
 }
