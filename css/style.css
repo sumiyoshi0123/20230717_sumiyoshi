@@ -288,22 +288,22 @@ h2 span {
     padding-left: 380px;
     color: #6F6F6F;
 }
-table {
+.company__profile {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
 }
-table, th, td {
+.company__profile, .profile__left, .profile__right {
     border: 1px solid #D8D8D8;
     padding: 20px;
 }
-th {
+.profile__left {
     width: 200px;
     text-align: left;
     color: #6F6F6F;
     background-color: #F5F5F5;
 }
-td {
+.profile__right {
     color: #6F6F6F;
     width: 450px;
 }
