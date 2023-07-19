@@ -28,7 +28,7 @@ body {
     width: 50%;
 }
 
-h1 {
+.first-view__title-top {
     position: absolute;
     top: 80px;
     left: 230px;
@@ -38,10 +38,10 @@ h1 {
     color: #AE1862;
     line-height: 100px;
 }
-h1 span {
+.first-view__title-top span {
     color: #0B9FB0;
 }
-h2 {
+.first-view__title-bottom {
     position: absolute;
     top: 330px;
     left: 230px;
@@ -49,7 +49,7 @@ h2 {
     color: #AE1862;
     margin-top: 30px;
 }
-h2 span {
+.first-view__title-bottom span {
     color: #0B9FB0;
 }
 .first-view__text {
